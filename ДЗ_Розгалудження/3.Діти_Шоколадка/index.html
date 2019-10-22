@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>
+        І`мя першої дитини
+        <input id="name1" type="string">
+    </label> 
+    <label>
+        Кількість шоколадок у першої дитини
+        <input id="choko1" type="number">
+    </label> <br>
+    <label>
+            І`мя другої дитини
+            <input id="name2" type="string">
+    </label>    
+    <label>
+            Кількість шоколадок у другої дитини
+            <input id="choko2" type="number">
+    </label> <br>
+
+    <button id="btn">
+        Результат
+    </button> <br>
+
+    <label>
+        <input id="result" type="string">
+    </label> <br>
+
+    <script>
+        document.getElementById("btn").onclick=function(){
+            var n1=document.getElementById("name1").value
+            var n2=document.getElementById("name2").value
+            var c1=parseInt(document.getElementById("choko1").value)
+            var c2=parseInt(document.getElementById("choko2").value)
+            
+            if (c1>c2) {
+            document.getElementById("result").value=n1
+            }
+            else
+            document.getElementById("result").value=n2
+   
+        }
+    </script>
+
+</body>
+</html>
